@@ -10,14 +10,10 @@
     <h1>Results</h1>
     <h2>{{ calculatedValue }}</h2>
     <h4 v-if="error">Please give some value to the inputs....</h4>
-    <button type="button" @click="getData">Get Data</button>
-    <p>{{ data }}</p>
   </div>
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   data() {
     return {
@@ -37,19 +33,13 @@ export default {
         this.calculatedValue = "";
         this.error = true;
       }
-    },
-    async getData() {
-      await axios
-        .get("https://jsonplaceholder.typicode.com/posts")
-        .then(res => (this.data = res.data))
-        .catch(err => console.log(err));
     }
   }
 };
 </script>
 
 <style>
-#wizard {
+#home-page {
   text-align: center;
 }
 .my-flex {
