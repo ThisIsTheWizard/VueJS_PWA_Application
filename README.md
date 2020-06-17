@@ -1,4 +1,4 @@
-# app
+# PWA_Application_VueJS
 
 ## Project setup
 ```
