@@ -1,4 +1,4 @@
-# PWA_Application_VueJS
+# VueJS_PWA_Application
 
 ## Project setup
 ```
