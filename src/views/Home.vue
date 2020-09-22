@@ -1,6 +1,5 @@
 <template>
   <div id="home-page">
-    <!-- <img src="@/assets/brand.png" /> -->
     <h1>Home Page</h1>
     <div class="my-flex">
       <input type="number" v-model="input_1" placeholder="Number" required />
@@ -13,25 +12,6 @@
       <li v-for="data in calculated_data" :key="data.id">{{ data.value }}</li>
     </ol>
     <h4 v-if="error">Please give some value to the inputs....</h4>
-
-    <div
-      class="row"
-      style="font-size: 1.2rem; font-weight: bold; color: #383838; margin: 5px -15px 10px -15px;"
-    >
-      <div id="prevDay" class="col-2 dayChange" style="text-align: left;">
-        <<
-      </div>
-      <div class="col-8" style="text-align: center;">
-        Thu 1st Jan 1970 <input type="hidden" name="currDate" value="" />
-      </div>
-      <div id="nextDay" class="col-2 dayChange" style="text-align: right;">
-        >>
-      </div>
-    </div>
-
-    <div style="font-size: 1rem; text-align: center;">
-      No Jobs Scheduled
-    </div>
   </div>
 </template>
 
